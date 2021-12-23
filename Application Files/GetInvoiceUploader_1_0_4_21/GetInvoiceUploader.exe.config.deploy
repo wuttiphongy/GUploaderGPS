@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.2" />
+  </startup>
+  <appSettings>
+    <add key="DbConnectionString" value="Data Source=db.db" />
+    <add key="VfpConnectionString" value="Provider=vfpoledb;Data Source={0};Collating Sequence=machine;" />
+    <add key="Database" value="C:\VFP\" />
+    <add key="OutputXmlPath" value="C:\GetInvoice\" />
+    <add key="SuccessPath" value="Success" />
+    <add key="FailPath" value="Fail" />
+    <add key="FilePrefix" value="M" />
+    <add key="DocTypeTax" value="T03" />
+    <add key="DocTypeReceipt" value="T01" />
+    <add key="DocTypeDebitNote" value="T02" />
+    <add key="DocTypeCreditNote" value="T04" />
+    <add key="SellerID" value="0103555056904" />
+    <add key="SellerTaxID" value="0103555056904" />
+    <add key="SellerName" value="ห้างหุ้นส่วนจำกัด จีพีเอสไอแอม" />
+    <add key="SellerBranchNo" value="00000" />
+    <add key="SellerBranchName" value="สำนักงานใหญ่/Head Office" />
+    <add key="SellerBuildingNo" value="323/8" />
+    <add key="SellerBuildingName" value="" />
+    <add key="SellerAddress" value="323/8 ซอยภาวนา แขวงสามเสนนอก เขตห้วยขวาง กรุงเทพมหานคร 10310" />
+    <add key="SellerStreetName" value="" />
+    <add key="SellerDistrict" value="สามเสนนอก" />
+    <add key="SellerCity" value="ห้วยขวาง" />
+    <add key="SellerProvince" value="Bangkok" />
+    <add key="SellerPostalCode" value="10310" />
+    <add key="SellerCountryCode" value="TH" />
+    <add key="SellerPhoneNumber" value="02-111-7999 กด 2" />
+    <add key="SellerElectronicMail" value="account@gpsiam.com" />
+    <add key="ServiceUrl" value="https://uatapi.getinvoice.net/eTax/api/process?key=udAJgi0lhCOtUyQPpTCU5qMEJsXYuBpwBCWUGANO" />
+    <add key="TickTime" value="10:00" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
